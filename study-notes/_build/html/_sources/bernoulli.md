@@ -1,6 +1,7 @@
 ## Bernoulli
 This is my explanation to my script.
-```python
+```{code-cell} ipython3
+:tags: ["hide-output", "output_scroll"]
 %matplotlib widget
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
