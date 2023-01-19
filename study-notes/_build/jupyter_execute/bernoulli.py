@@ -1,19 +1,13 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-## Bernoulli
-This is my explanation to my script.
-```{code-cell} ipython3
-:tags: ["hide-output", "output_scroll"]
-%matplotlib widget
+#!/usr/bin/env python
+# coding: utf-8
+
+# ## Bernoulli
+# This is my explanation to my script.
+
+# In[1]:
+
+
+get_ipython().run_line_magic('matplotlib', 'widget')
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
 import numpy as np
@@ -68,4 +62,4 @@ ax.set_xlabel('Value of x')
 ax.set_title('Bernoulli Distribution')
 
 plt.show()
-```
+
