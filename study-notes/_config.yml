@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Study notes and side projects
-author: Britta Oberlack
+title: Brittas Sandbox
+author: Britta A. Oberlack
 logo: logo.png
 
 # Force re-execution of notebooks on each build.
