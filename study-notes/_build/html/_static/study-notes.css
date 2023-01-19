@@ -1,10 +1,7 @@
 /* Custom CSS */
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
-title {
+
+body {
     text-align: center;
-    font-family: 'Sofia Sans', sans-serif;
-}
-p {
-    text-align: justify;
     font-family: 'Sofia Sans', sans-serif;
 }
