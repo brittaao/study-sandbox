@@ -1,10 +1,19 @@
 /* Custom CSS */
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
-title {
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+body {
+    text-align: left;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.heading-style,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Signika Negative', sans-serif;
     text-align: center;
-    font-family: 'Sofia Sans', sans-serif;
 }
-p {
-    text-align: justify;
-    font-family: 'Sofia Sans', sans-serif;
-}
+
