@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Bernoulli
+# # Bernoulli
 # The Bernoulli distribution is probably one of the first distributions to come across. It is a special case
 # of the binomial distribution with n = 1 (where n is the number of trials conducted). If X is a random variable
 # that takes value 1 with probability p and 0 with probability q, then it holds: 
@@ -20,7 +20,6 @@
 
 
 get_ipython().run_line_magic('matplotlib', 'widget')
-:tags: ["hide-cell"]
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
 import numpy as np
