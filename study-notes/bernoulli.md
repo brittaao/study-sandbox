@@ -25,8 +25,8 @@ kernel running).
 ```
 
 ```{code-cell} ipython3
-:tags: ["hide-cell"]
 %matplotlib widget
+:tags: ["hide-cell"]
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
 import numpy as np

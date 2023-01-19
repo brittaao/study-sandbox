@@ -9,3 +9,6 @@ a running python kernel, but jupyter books renders markdown and .ipynb files int
 kernel running).
 ```
 The selection of functions and distributions is based on {cite}`deeplearn`, chapter 3. 
+
+```{bibliography}
+```
