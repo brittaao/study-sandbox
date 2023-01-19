@@ -10,7 +10,20 @@ kernelspec:
   name: python3
 ---
 ## Bernoulli
-This is my explanation to my script.
+The Bernoulli distribution is probably one of the first distributions to come across. It is a special case
+of the binomial distribution with n = 1 (where n is the number of trials conducted). If X is a random variable
+that takes value 1 with probability p and 0 with probability q, then it holds: 
+
+$$
+Pr(X=1) = p = 1 - Pr(X=0) = 1 - q
+$$
+
+```{note}
+The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
+a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
+kernel running).
+```
+
 ```{code-cell} ipython3
 :tags: ["hide-cell"]
 %matplotlib widget

@@ -8,3 +8,4 @@ The output in this jupyter book will unfortunately not be interactive. This is b
 a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
 kernel running).
 ```
+The selection of functions and distributions is based on {cite}`deeplearn`, chapter 3. 
