@@ -12,7 +12,7 @@ kernelspec:
 ## Bernoulli
 This is my explanation to my script.
 ```{code-cell} ipython3
-:tags: ["hide-cell", "hide-output"]
+:tags: ["hide-cell"]
 %matplotlib widget
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
