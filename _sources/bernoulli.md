@@ -1,6 +1,18 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+---
 ## Bernoulli
 This is my explanation to my script.
-```python
+```{code-cell} ipython3
+:tags: ["hide-cell"]
 %matplotlib widget
 import ipywidgets as widgets
 import matplotlib.pyplot as plt

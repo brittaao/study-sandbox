@@ -1,5 +1,4 @@
-/* Custom CSS */
-
+/* My custom CSS */
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
 
 .heading-style,
@@ -14,3 +13,4 @@ h6 {
 body {
     font-family: 'Signika Negative', sans-serif;
 }
+
