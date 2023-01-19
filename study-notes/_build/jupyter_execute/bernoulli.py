@@ -20,6 +20,7 @@
 
 
 get_ipython().run_line_magic('matplotlib', 'widget')
+:tags: ["hide-cell"]
 import ipywidgets as widgets
 import matplotlib.pyplot as plt
 import numpy as np
