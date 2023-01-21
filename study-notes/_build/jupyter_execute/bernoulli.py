@@ -79,3 +79,5 @@ default_color = "#81b69d80"
 # 
 # plt.show()
 # ```
+# 
+# ![bernoulli](./_static/bernoulli.gif)

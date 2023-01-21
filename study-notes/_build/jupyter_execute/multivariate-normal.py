@@ -1,20 +1,13 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-## Multivariate normal distribution
-This is my explanation to my script.
+#!/usr/bin/env python
+# coding: utf-8
 
-```{code-cell} ipython3
-:tags: ["hide-cell"]
-%matplotlib widget
+# ## Multivariate normal distribution
+# This is my explanation to my script.
+
+# In[1]:
+
+
+get_ipython().run_line_magic('matplotlib', 'widget')
 import ipywidgets as widgets
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -22,10 +15,11 @@ from matplotlib.widgets import Slider, Button
 import numpy as np
 from scipy.stats import multivariate_normal 
 default_color = "#81b69d80"
-```
-Some more expl.
-```{code-cell} ipython3
-:tags: ["hide-cell"]
+
+
+# Some more expl.
+
+# In[2]:
 
 
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(8, 10))
@@ -95,7 +89,8 @@ update_dist(0)
 
 
 plt.show()
-```
-This is some more explanation.
 
-![normal](./_static/normal.gif)
+
+# This is some more explanation.
+# 
+# ![normal](./_static/normal.gif)

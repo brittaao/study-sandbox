@@ -86,4 +86,4 @@ ax.set_title('Bernoulli Distribution')
 plt.show()
 ```
 
-![bernoulli](../_static/bernoulli.gif)
+![bernoulli](./_static/bernoulli.gif)
