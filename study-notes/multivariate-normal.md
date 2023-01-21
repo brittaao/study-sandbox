@@ -9,7 +9,7 @@ kernelspec:
   language: python
   name: python3
 ---
-## Multivariate normal distribution
+# Multivariate normal distribution
 This is my explanation to my script.
 
 ```{note}

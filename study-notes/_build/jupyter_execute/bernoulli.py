@@ -15,13 +15,14 @@
 # a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
 # kernel running).
 # ```
+# The `matplotlib.widget` library is needed to plot an interactive plot. Click to expand the code.
 
 # In[1]:
 
 
 get_ipython().run_line_magic('matplotlib', 'widget')
 import ipywidgets as widgets
-import matplotlib
+import matplotlib as mpl 
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
 import numpy as np
@@ -29,7 +30,8 @@ import numpy as np
 default_color = "#81b69d80"
 
 
-# The code for the plot: 
+# This is the code for the plot of the probability densitity function of the bernoulli distribution.
+# If you want to try the widget out interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb).
 # ```
 # def bernoulli(p):
 #     '''Return probabilities p and q'''
@@ -38,7 +40,7 @@ default_color = "#81b69d80"
 # # Define values that x can take 
 # x_values = ['0', '1']
 # 
-# # Define initial p 
+# # Define initial phi 
 # init_p = 0.5
 # 
 # # Compute probabilities

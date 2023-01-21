@@ -1,29 +1,25 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-# Exponential and Laplace distribution
+#!/usr/bin/env python
+# coding: utf-8
 
-```{code-cell} ipython3
-:tags: ["hide-cell"]
-%matplotlib widget
+# # Exponential and Laplace distribution
+
+# In[1]:
+
+
+get_ipython().run_line_magic('matplotlib', 'widget')
 import ipywidgets as widgets
 import matplotlib as mpl 
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
 import numpy as np
 from scipy.stats import expon
-``` 
-## Exponential distribution 
 
-```{code-cell} ipython3
+
+# ## Exponential distribution
+
+# In[2]:
+
+
 x = np.linspace(0, 2, 1000)
 
 fig, ax = plt.subplots()
@@ -54,12 +50,15 @@ slider_x.on_changed(update_lambda)
 ax.set_ylim(0,5)
 update_lambda(1)
 plt.show()
-```
-![normal](./_static/expon.gif)
 
-## Laplace distribution
 
-```{code-cell} ipython3
+# ![normal](./_static/expon.gif)
+# 
+# ## Laplace distribution
+
+# In[ ]:
+
+
 x = np.linspace(-5, 5, 1000)
 
 fig, ax = plt.subplots()
@@ -103,6 +102,6 @@ gamma_slider.on_changed(update)
 
 update(0)
 plt.show()
-```
 
-![normal](./_static/laplace.gif)
+
+# ![normal](./_static/laplace.gif)
