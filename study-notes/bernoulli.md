@@ -23,7 +23,7 @@ The output in this jupyter book will unfortunately not be interactive. This is b
 a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
 kernel running).
 ```
-The `matplotlib.widget` library is needed to plot an interactive plot.
+The `matplotlib.widget` library is needed to plot an interactive plot. Click to expand the code.
 
 ```{code-cell} ipython3
 :tags: ["hide-cell"]
@@ -36,7 +36,8 @@ import numpy as np
 
 default_color = "#81b69d80"
 ```
-The code for the plot of the probability densitity function:  
+This is the code for the plot of the probability densitity function of the bernoulli distribution.
+If you want to try the widget out interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb).
 ```
 def bernoulli(p):
     '''Return probabilities p and q'''
