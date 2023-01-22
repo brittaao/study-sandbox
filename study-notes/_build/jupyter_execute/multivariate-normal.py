@@ -7,7 +7,7 @@
 # Here, we have two variables X and Y that are bivariately normally distributed: 
 # $$
 # \begin{pmatrix}
-#  X_1 \\
+#  X \\
 #  Y
 # \end{pmatrix}  \sim N \left( \begin{pmatrix}
 #  \mu_X \\

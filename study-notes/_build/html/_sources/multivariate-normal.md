@@ -15,7 +15,7 @@ commonly known as the Gaussian distribution. We will be taking a look at the biv
 Here, we have two variables X and Y that are bivariately normally distributed: 
 $$
 \begin{pmatrix}
- X_1 \\
+ X \\
  Y
 \end{pmatrix}  \sim N \left( \begin{pmatrix}
  \mu_X \\
