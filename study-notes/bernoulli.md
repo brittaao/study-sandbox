@@ -80,7 +80,7 @@ prob_slider.on_changed(update)
 
 ax.set_xlim(-0.5, 1.5)
 ax.set_ylim(0, 1.1)
-ax.set_ylabel('Probability P(X)')
+ax.set_ylabel('Probability')
 ax.set_xlabel('Value of X')
 ax.set_title('Bernoulli Distribution')
 

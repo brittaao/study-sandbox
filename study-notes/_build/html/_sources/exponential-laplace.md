@@ -10,6 +10,7 @@ kernelspec:
   name: python3
 ---
 # Exponential and Laplace distribution
+Two closely related probability distributions.
 
 ```{code-cell} ipython3
 :tags: ["hide-cell"]
@@ -24,6 +25,19 @@ from scipy.stats import expon
 default_color = "#81b69d"
 ``` 
 ## Exponential distribution 
+
+![expon](./_static/expon.gif)
+
+The [exponential distribution](https://en.wikipedia.org/wiki/Exponential_distribution) defined as 
+
+$$
+p(x;\lambda) = \begin{cases}
+\lambda  e^{ - \lambda x} & x \ge 0, \\
+0 & x < 0.
+$$
+
+allows us to place a sharp point at x = 0. An interesting property of this distribution is it being 
+[memoryless](https://en.wikipedia.org/wiki/Memorylessness)
 
 ```{code-cell} ipython3
 :tags: ["hide-cell"]
@@ -58,9 +72,19 @@ ax.set_ylim(0,5)
 update_lambda(1)
 plt.show()
 ```
-![normal](./_static/expon.gif)
+
 
 ## Laplace distribution
+
+![laplace](./_static/laplace.gif)
+
+The [Laplace distribution](https://en.wikipedia.org/wiki/Laplace_distribution) allows to place a sharp peak at $ \mu $ ("location parameter") with an additional parameter 
+$ \gamma $ ("scale parameter"). It is defined as: 
+
+$$
+p(x;\mu;\gamma) = \frac{1}{2\gamma} e^{\frac{- \abs{x-\mu}}{\gamma}}
+$$
+
 
 ```{code-cell} ipython3
 :tags: ["hide-cell"]
@@ -109,4 +133,9 @@ update(0)
 plt.show()
 ```
 
-![normal](./_static/laplace.gif)
+```{note}
+The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
+a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
+kernel running).
+```
+

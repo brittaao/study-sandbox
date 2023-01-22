@@ -2,7 +2,10 @@
 # coding: utf-8
 
 # # Bernoulli
-# The Bernoulli distribution is probably one of the first distributions to come across. It is a special case
+# 
+# ![bernoulli](./_static/bernoulli.gif)
+# 
+# The [Bernoulli distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) is probably one of the first distributions to come across. It is a special case
 # of the binomial distribution with n = 1 (where n is the number of trials conducted). If X is a random variable
 # that takes value 1 with probability p and 0 with probability q, then it holds: 
 # 
@@ -10,14 +13,7 @@
 # Pr(X=1) = p = 1 - Pr(X=0) = 1 - q
 # $$
 # 
-# ![bernoulli](./_static/bernoulli.gif)
-# 
-# ```{note}
-# The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
-# a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
-# kernel running).
-# ```
-# The `matplotlib.widget` library is needed to plot an interactive plot. Click to expand the code.
+# The `matplotlib.widget` library is needed to plot an interactive plot.
 
 # In[1]:
 
@@ -33,7 +29,8 @@ default_color = "#81b69d80"
 
 
 # This is the code for the plot of the probability densitity function of the bernoulli distribution.
-# If you want to try the widget out interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb).
+# If you want to try out the widget interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb).
+# 
 # ```
 # def bernoulli(p):
 #     '''Return probabilities p and q'''
@@ -82,4 +79,10 @@ default_color = "#81b69d80"
 # ax.set_title('Bernoulli Distribution')
 # 
 # plt.show()
+# ```
+# 
+# ```{note}
+# The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
+# a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
+# kernel running).
 # ```

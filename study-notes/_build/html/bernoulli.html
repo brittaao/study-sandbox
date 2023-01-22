@@ -341,22 +341,16 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="bernoulli">
 <h1>Bernoulli<a class="headerlink" href="#bernoulli" title="Permalink to this headline">#</a></h1>
-<p>The Bernoulli distribution is probably one of the first distributions to come across. It is a special case
+<p><img alt="bernoulli" src="_images/bernoulli.gif" /></p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Bernoulli_distribution">Bernoulli distribution</a> is probably one of the first distributions to come across. It is a special case
 of the binomial distribution with n = 1 (where n is the number of trials conducted). If X is a random variable
 that takes value 1 with probability p and 0 with probability q, then it holds:</p>
 <div class="math notranslate nohighlight">
 \[
 Pr(X=1) = p = 1 - Pr(X=0) = 1 - q
 \]</div>
-<p><img alt="bernoulli" src="_images/bernoulli.gif" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The output in this jupyter book will unfortunately not be interactive. This is because the widgets require
-a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python
-kernel running).</p>
-</div>
-<p>The <code class="docutils literal notranslate"><span class="pre">matplotlib.widget</span></code> library is needed to plot an interactive plot. Click to expand the code.</p>
-<div class="cell tag_hide-cell docutils container">
+<p>The <code class="docutils literal notranslate"><span class="pre">matplotlib.widget</span></code> library is needed to plot an interactive plot.</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> widget
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
@@ -371,7 +365,7 @@ kernel running).</p>
 </div>
 </div>
 <p>This is the code for the plot of the probability densitity function of the bernoulli distribution.
-If you want to try the widget out interactively, you can find the notebook file <a class="reference external" href="https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb">here</a>.</p>
+If you want to try out the widget interactively, you can find the notebook file <a class="reference external" href="https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/bernoulli.ipynb">here</a>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bernoulli</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;Return probabilities p and q&#39;&#39;&#39;</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">p</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">]</span>
@@ -420,6 +414,12 @@ If you want to try the widget out interactively, you can find the notebook file 
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The output in this jupyter book will unfortunately not be interactive. This is because the widgets require
+a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python
+kernel running).</p>
 </div>
 </section>
 
