@@ -68,6 +68,7 @@ If you want to try out the widget interactively, you can find the notebook file 
 
 
 ```{code-cell} ipython3
+:tags: ["hide-output"]
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(8, 10))
 
 fig.subplots_adjust(bottom=0.25)

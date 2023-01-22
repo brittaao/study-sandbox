@@ -38,10 +38,10 @@ p(x;\lambda) = \begin{cases}
 $$
 
 allows us to place a sharp point at x = 0. An interesting property of this distribution is it being 
-[memoryless](https://en.wikipedia.org/wiki/Memorylessness)
+[memoryless](https://en.wikipedia.org/wiki/Memorylessness).
 
 ```{code-cell} ipython3
-:tags: ["hide-cell"]
+:tags: ["hide-ouptut"]
 x = np.linspace(0, 2, 1000)
 
 fig, ax = plt.subplots()
@@ -83,12 +83,12 @@ The [Laplace distribution](https://en.wikipedia.org/wiki/Laplace_distribution) a
 $ \gamma $ ("scale parameter"). It is defined as: 
 
 $$
-p(x;\mu;\gamma) = \frac{1}{2\gamma} e^{\frac{- \abs{x-\mu}}{\gamma}}
+p(x;\mu;\gamma) = \frac{1}{2\gamma} e^{\frac{- |x-\mu|}{\gamma}}
 $$
 
 
 ```{code-cell} ipython3
-:tags: ["hide-cell"]
+:tags: ["hide-output"]
 x = np.linspace(-5, 5, 1000)
 
 fig, ax = plt.subplots()

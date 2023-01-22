@@ -28,6 +28,7 @@ default_color = "#81b69d"
 # p(x;\lambda) = \begin{cases}
 # \lambda  e^{ - \lambda x} & x \ge 0, \\
 # 0 & x < 0.
+# \end{cases}
 # $$
 # 
 # allows us to place a sharp point at x = 0. An interesting property of this distribution is it being 
