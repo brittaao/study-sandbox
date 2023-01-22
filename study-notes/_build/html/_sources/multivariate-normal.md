@@ -13,6 +13,7 @@ kernelspec:
 The multivariate normal distribution is a generalization of the univariate normal distribution, 
 commonly known as the Gaussian distribution. We will be taking a look at the bivariate case. 
 Here, we have two variables X and Y that are bivariately normally distributed: 
+
 $$
 \begin{pmatrix}
  X \\
@@ -37,6 +38,7 @@ we can write the covariance as
 $$
 cov(X,Y) = \rho_{X,Y} \sigma_X \sigma_Y
 $$
+
 ```{note}
 The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
 a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 

@@ -10,7 +10,10 @@ kernelspec:
   name: python3
 ---
 # Multivariate normal distribution
-The multivariate normal distribution is a generalization of the univariate normal distribution, 
+
+![normal](./_static/normal.gif)
+
+The [multivariate normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) is a generalization of the univariate normal distribution, 
 commonly known as the Gaussian distribution. We will be taking a look at the bivariate case. 
 Here, we have two variables X and Y that are bivariately normally distributed: 
 
@@ -31,26 +34,22 @@ $ \sigma^2_X, \sigma^2_Y$ are the variances on the diagonal of the covariance
 matrix and $\rho$ is the correlation coefficient between X and Y. 
 On the off-diagonal, we can find the covariance of X and Y.
 Since
+
 $$ 
 \rho_{X,Y} = \frac{{cov}(X,Y)}{\sigma_X \sigma_Y}
 $$
+
 we can write the covariance as 
+
 $$
 cov(X,Y) = \rho_{X,Y} \sigma_X \sigma_Y
 $$
-
-```{note}
-The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
-a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
-kernel running).
-```
 
 For creating the interactive widget, we will use `matplot.widgets`. 
 We will use `scipy.stats.multivariate_normal` to compute the probability density function of the bivariate normal 
 distribution.
 
 ```{code-cell} ipython3
-:tags: ["hide-cell"]
 %matplotlib widget
 import ipywidgets as widgets
 import matplotlib as mpl 
@@ -63,9 +62,12 @@ from matplotlib import cm
 
 default_color = "#81b69d80"
 ```
+In the widget, only $ \mu_x, \mu_Y and \rho_{X,Y}$ are adjustable. The variances $\sigma^2_X$ and $\sigma^2_Y$ are 
+arbitrarily set to 2 and can be changed in the code. The covariance is computed based on the correlation coeefficient.
+If you want to try out the widget interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/normal-distribution.ipynb).
+
 
 ```{code-cell} ipython3
-:tags: ["hide-cell"]
 fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(8, 10))
 
 fig.subplots_adjust(bottom=0.25)
@@ -139,6 +141,11 @@ update_dist(0)
 
 plt.show()
 ```
-This is some more explanation.
 
-![normal](./_static/normal.gif)
+```{note}
+The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
+a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
+kernel running).
+```
+
+
