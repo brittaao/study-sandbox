@@ -32,7 +32,7 @@ default_color = "#81b69d"
 # $$
 # 
 # allows us to place a sharp point at x = 0. An interesting property of this distribution is it being 
-# [memoryless](https://en.wikipedia.org/wiki/Memorylessness)
+# [memoryless](https://en.wikipedia.org/wiki/Memorylessness).
 
 # In[2]:
 
@@ -77,7 +77,7 @@ plt.show()
 # $ \gamma $ ("scale parameter"). It is defined as: 
 # 
 # $$
-# p(x;\mu;\gamma) = \frac{1}{2\gamma} e^{\frac{- \abs{x-\mu}}{\gamma}}
+# p(x;\mu;\gamma) = \frac{1}{2\gamma} e^{\frac{- |x-\mu|}{\gamma}}
 # $$
 
 # In[3]:

@@ -57,7 +57,7 @@ from matplotlib import cm
 default_color = "#81b69d80"
 
 
-# In the widget, only $ \mu_x, \mu_Y and \rho_{X,Y}$ are adjustable. The variances $\sigma^2_X$ and $\sigma^2_Y$ are 
+# In the widget, only $ \mu_x, \mu_Y $ and  $ \rho_{X,Y}$ are adjustable. The variances $\sigma^2_X$ and $\sigma^2_Y$ are 
 # arbitrarily set to 2 and can be changed in the code. The covariance is computed based on the correlation coeefficient.
 # If you want to try out the widget interactively, you can find the notebook file [here](https://github.com/brittaao/study-sandbox/blob/main/prob-distributions/normal-distribution.ipynb).
 
