@@ -53,8 +53,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Multivariate normal distribution" href="multivariate-normal.html" />
@@ -344,10 +342,10 @@ title="Print to PDF"
 <p>The Bernoulli distribution is probably one of the first distributions to come across. It is a special case
 of the binomial distribution with n = 1 (where n is the number of trials conducted). If X is a random variable
 that takes value 1 with probability p and 0 with probability q, then it holds:</p>
-<div class="math notranslate nohighlight">
-\[
+<p>$$
 Pr(X=1) = p = 1 - Pr(X=0) = 1 - q
-\]</div>
+$$</p>
+<p><img alt="bernoulli" src="_images/bernoulli.gif" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The output in this jupyter book will unfortunately not be interactive. This is because the widgets require
@@ -420,7 +418,6 @@ If you want to try the widget out interactively, you can find the notebook file 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-<p><img alt="bernoulli" src="_images/bernoulli.gif" /></p>
 </section>
 
     <script type="text/x-thebe-config">

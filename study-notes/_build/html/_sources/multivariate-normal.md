@@ -10,8 +10,33 @@ kernelspec:
   name: python3
 ---
 # Multivariate normal distribution
-This is my explanation to my script.
-
+The multivariate normal distribution is a generalization of the univariate normal distribution, 
+commonly known as the Gaussian distribution. We will be taking a look at the bivariate case. 
+Here, we have two variables X and Y that are bivariately normally distributed: 
+$$
+\begin{pmatrix}
+ X_1 \\
+ Y
+\end{pmatrix}  \sim N \left( \begin{pmatrix}
+ \mu_X \\
+ \mu_Y
+\end{pmatrix} , \begin{pmatrix}
+ \sigma^2_X &  \rho \sigma_X \sigma_Y \\
+ \rho \sigma_X \sigma_Y &  \sigma^2_Y
+\end{pmatrix} \right)
+$$
+where $ \mu_X, \mu_Y $ are the means of the respective variable,
+$ \sigma^2_X, \sigma^2_Y$ are the variances on the diagonal of the covariance 
+matrix and $\rho$ is the correlation coefficient between X and Y. 
+On the off-diagonal, we can find the covariance of X and Y.
+Since
+$$ 
+\rho_{X,Y} = \frac{{cov}(X,Y)}{\sigma_X \sigma_Y}
+$$
+we can write the covariance as 
+$$
+cov(X,Y) = \rho_{X,Y} \sigma_X \sigma_Y
+$$
 ```{note}
 The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
 a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 

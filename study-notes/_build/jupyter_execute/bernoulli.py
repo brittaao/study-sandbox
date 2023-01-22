@@ -10,6 +10,8 @@
 # Pr(X=1) = p = 1 - Pr(X=0) = 1 - q
 # $$
 # 
+# ![bernoulli](./_static/bernoulli.gif)
+# 
 # ```{note}
 # The output in this jupyter book will unfortunately not be interactive. This is because the widgets require 
 # a running python kernel, but jupyter books renders markdown and .ipynb files into html (so no Python 
@@ -81,5 +83,3 @@ default_color = "#81b69d80"
 # 
 # plt.show()
 # ```
-# 
-# ![bernoulli](./_static/bernoulli.gif)

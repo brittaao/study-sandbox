@@ -20,10 +20,13 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
 import numpy as np
 from scipy.stats import expon
+
+default_color = "#81b69d"
 ``` 
 ## Exponential distribution 
 
 ```{code-cell} ipython3
+:tags: ["hide-cell"]
 x = np.linspace(0, 2, 1000)
 
 fig, ax = plt.subplots()
@@ -60,6 +63,7 @@ plt.show()
 ## Laplace distribution
 
 ```{code-cell} ipython3
+:tags: ["hide-cell"]
 x = np.linspace(-5, 5, 1000)
 
 fig, ax = plt.subplots()

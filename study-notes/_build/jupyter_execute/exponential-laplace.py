@@ -14,6 +14,8 @@ from matplotlib.widgets import Slider, Button
 import numpy as np
 from scipy.stats import expon
 
+default_color = "#81b69d"
+
 
 # ## Exponential distribution
 
@@ -56,7 +58,7 @@ plt.show()
 # 
 # ## Laplace distribution
 
-# In[ ]:
+# In[3]:
 
 
 x = np.linspace(-5, 5, 1000)
