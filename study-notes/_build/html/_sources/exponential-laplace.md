@@ -41,7 +41,7 @@ allows us to place a sharp point at x = 0. An interesting property of this distr
 [memoryless](https://en.wikipedia.org/wiki/Memorylessness).
 
 ```{code-cell} ipython3
-:tags: ["hide-ouptut"]
+:tags: ["hide-output"]
 x = np.linspace(0, 2, 1000)
 
 fig, ax = plt.subplots()
